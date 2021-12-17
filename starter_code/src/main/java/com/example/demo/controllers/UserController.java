@@ -40,7 +40,7 @@ public class UserController {
 	public ResponseEntity<User> findByUserName(@PathVariable String username) {
 		User user = userRepository.findByUsername(username);
 		if (user == null) {
-			log.error(String.format("User %s not found.", username));
+			log.error(String.format("User not found:  %s", username));
 			return ResponseEntity.notFound().build();
 		}
 		return ResponseEntity.ok(user);
@@ -51,9 +51,9 @@ public class UserController {
 		User user = new User();
 		user.setUsername(createUserRequest.getUsername());
 		Cart cart = new Cart();
-		log.info(String.format("User name set with %s: ", createUserRequest.getUsername()));
+		log.info(String.format("Created user: %s", createUserRequest.getUsername()));
 		if(createUserRequest.getPassword().length() < 7 || !createUserRequest.getPassword().equals(createUserRequest.getConfirmPassword())){
-			log.error(String.format("Could not create user %s due to password", createUserRequest.getUsername()));
+			log.error(String.format("Could not create user due to password: %s", createUserRequest.getUsername()));
 			return ResponseEntity.badRequest().build();
 		}
 
