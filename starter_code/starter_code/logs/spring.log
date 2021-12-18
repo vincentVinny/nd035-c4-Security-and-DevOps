@@ -84,3 +84,43 @@
 2021-12-17 15:49:41.005  INFO 20568 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-12-17 15:49:41.007  INFO 20568 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-12-17 15:49:41.009  INFO 20568 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-17 20:13:36.106  INFO 1396 --- [main] c.example.demo.SareetaApplicationTests   : Starting SareetaApplicationTests on DESKTOP-HD2OUPF with PID 1396 (started by Vinny-Main in F:\codebase\nd035-c4-Security-and-DevOps\starter_code)
+2021-12-17 20:13:36.107  INFO 1396 --- [main] c.example.demo.SareetaApplicationTests   : No active profile set, falling back to default profiles: default
+2021-12-17 20:13:36.489  INFO 1396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-17 20:13:36.536  INFO 1396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 4 repository interfaces.
+2021-12-17 20:13:36.871  INFO 1396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ae5225c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-17 20:13:37.005  INFO 1396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-17 20:13:37.122  INFO 1396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-17 20:13:37.177  INFO 1396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-17 20:13:37.239  INFO 1396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2021-12-17 20:13:37.240  INFO 1396 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-17 20:13:37.374  INFO 1396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-17 20:13:37.500  INFO 1396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-12-17 20:13:38.008  INFO 1396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:13:38.501  WARN 1396 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-17 20:13:38.579  INFO 1396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d34866a, org.springframework.security.web.context.SecurityContextPersistenceFilter@383e6734, org.springframework.security.web.header.HeaderWriterFilter@2a73a64f, org.springframework.web.filter.CorsFilter@26291192, org.springframework.security.web.authentication.logout.LogoutFilter@4fef4f96, com.example.demo.security.JWTAuthenticationFilter@27d5eb00, com.example.demo.security.JWTAuthenticationVerificationFilter@2b540131, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6be80629, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9de1b85, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@225ac5e7, org.springframework.security.web.session.SessionManagementFilter@2419a5db, org.springframework.security.web.access.ExceptionTranslationFilter@998fbd4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4bb10b]
+2021-12-17 20:13:38.850  INFO 1396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:13:39.028  INFO 1396 --- [main] c.example.demo.SareetaApplicationTests   : Started SareetaApplicationTests in 3.095 seconds (JVM running for 3.921)
+2021-12-17 20:13:39.217 ERROR 1396 --- [main] c.e.demo.controllers.CartController      : User test not found
+2021-12-17 20:13:39.221  INFO 1396 --- [main] c.e.demo.controllers.CartController      : Cart Created
+2021-12-17 20:13:39.222 ERROR 1396 --- [main] c.e.demo.controllers.CartController      : Item ID 2 not found
+2021-12-17 20:13:39.224  INFO 1396 --- [main] c.e.demo.controllers.CartController      : Cart Created
+2021-12-17 20:13:39.224 ERROR 1396 --- [main] c.e.demo.controllers.CartController      : User test not found
+2021-12-17 20:13:39.225 ERROR 1396 --- [main] c.e.demo.controllers.CartController      : Item ID 1 not found
+2021-12-17 20:13:39.226 ERROR 1396 --- [main] c.e.demo.controllers.ItemController      : Item A Different Item not found
+2021-12-17 20:13:39.245 ERROR 1396 --- [main] c.e.demo.controllers.OrderController     : User not found: test
+2021-12-17 20:13:39.246 ERROR 1396 --- [main] c.e.demo.controllers.OrderController     : User not found: test
+2021-12-17 20:13:39.247  INFO 1396 --- [main] c.e.demo.controllers.OrderController     : Orders Successfully found
+2021-12-17 20:13:39.247  INFO 1396 --- [main] c.e.demo.controllers.OrderController     : Order Created
+2021-12-17 20:13:39.257  INFO 1396 --- [main] c.e.demo.controllers.UserController      : Created user: test
+2021-12-17 20:13:39.257 ERROR 1396 --- [main] c.e.demo.controllers.UserController      : Could not create user due to password: test
+2021-12-17 20:13:39.257 ERROR 1396 --- [main] c.e.demo.controllers.UserController      : User not found:  not_test
+2021-12-17 20:13:39.258  INFO 1396 --- [main] c.e.demo.controllers.UserController      : Created user: test
+2021-12-17 20:13:39.258 ERROR 1396 --- [main] c.e.demo.controllers.UserController      : Could not create user due to password: test
+2021-12-17 20:13:39.259  INFO 1396 --- [main] c.e.demo.controllers.UserController      : Created user: test
+2021-12-17 20:13:39.262  INFO 1396 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-17 20:13:39.264  INFO 1396 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-17 20:13:39.265  INFO 1396 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-17 20:13:39.267  INFO 1396 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
