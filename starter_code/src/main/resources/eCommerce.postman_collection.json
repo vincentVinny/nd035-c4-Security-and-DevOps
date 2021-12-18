@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\":\"testUser\",\r\n    \"password\":\"abcdefg\",\r\n    \"confirmPassword\":\"abcdefg\"\r\n}",
+					"raw": "{\r\n    \"username\":\"testUser1\",\r\n    \"password\":\"abcdefg\",\r\n    \"confirmPassword\":\"abcdefg\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -67,9 +67,15 @@
 			"name": "getUser",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0VXNlciIsImV4cCI6MTY0MDYyMzczNH0.ZPQXjg6IITK1JaNlsS9aUXQl4DVboFUOAkAV3cxoglCUI7KBcSHaQdvtYNmeO_i2_K9-sUb8V9mgdVr-UR5P_A",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "http://localhost:8080/api/user/Vinny",
+					"raw": "http://localhost:8080/api/user/testUser",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -78,7 +84,14 @@
 					"path": [
 						"api",
 						"user",
-						"Vinny"
+						"testUser"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
 					]
 				}
 			},
@@ -124,7 +137,13 @@
 			"name": "submitAnOrder",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0VXNlciIsImV4cCI6MTY0MDYzMjkzNX0.QNdNF7fnd55eJs8fGA8IwQsICal1NFoOVhZm432mCSr8zB-QhZhc-MIKDbzKx5yyMxbVz4VxqVOHtHnaRxU5mg",
+						"type": "text"
+					}
+				],
 				"body": {
 					"mode": "raw",
 					"raw": "",
@@ -135,7 +154,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/order/submit/testUser",
+					"raw": "http://localhost:8080/api/order/submit/testUser1",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -145,7 +164,7 @@
 						"api",
 						"order",
 						"submit",
-						"testUser"
+						"testUser1"
 					]
 				}
 			},
